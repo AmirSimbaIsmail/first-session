@@ -44,7 +44,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function pushEvent(eventName) {
             window.dataLayer.push({
                 'event': eventName,
-                'eventName': eventName,
+                'button_eventName': eventName,
                 'timestamp': new Date().toISOString()
             });
             console.log(`Pushed ${eventName} to dataLayer`);
