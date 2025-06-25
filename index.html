@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4T8X4KM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
- 
+
     <div class="container">
         <h1>DataLayer Events Demo</h1>
         <div class="button-group">
@@ -44,6 +44,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function pushEvent(eventName) {
             window.dataLayer.push({
                 'event': eventName,
+                'eventName': eventName,
                 'timestamp': new Date().toISOString()
             });
             console.log(`Pushed ${eventName} to dataLayer`);
